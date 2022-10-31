@@ -1,0 +1,8 @@
+/package-lock.json
+/.vscode
+/node_modules
+/cypress/videos
+/cypress/screenshots
+/cypress/reports
+/cypress/downloads
+/cucumber-messages.ndjson
