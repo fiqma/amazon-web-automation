@@ -4,7 +4,7 @@ Feature: Delete Cart Item
         Given user is in Amazon page
         And user types "Computer" on search box
         And user clicks on search button
-        And user selects item "HP Elite Desktop PC Computer Intel Core i5 3.1-GHz, 8 gb Ram, 1 TB Hard Drive, DVDRW, 19 Inch LCD Monitor, Keyboard, Mouse, Wireless WiFi, Windows 10 (Renewed)"
+        And user selects item "HP Elite 800G1 Desktop Computer Package - Intel Quad Core i5 3.3GHz, 16GB RAM, 240GB SSD 2TB HDD, Windows 10 Pro, Dual 19 inch Monitors, Keyboard, Mouse (Renewed)"
         And user selects quantity: 10
         And user clicks on Add to Cart button
         And user clicks on Cart button

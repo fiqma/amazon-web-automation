@@ -1,14 +1,12 @@
-import amazonConfig from "../utils/config";
-
 export default class AmazonPage {
-  baseURL = amazonConfig.amazon.baseUrl;
+  baseURL = Cypress.env().amazon.baseUrl;
   searchInput = "#twotabsearchtextbox";
   searchButton = "#nav-search-submit-button";
-  searchResultCard = "div[data-component-type='s-search-result']";
-  quantitySelect = "#selectQuantity";
-  quantityOption = "#a-popover-2";
+  searchResultCard = ".a-link-normal";
+  quantitySelect = "#selectQuantity .a-button";
+  quantityOption = ".a-dropdown-link";
   addToCartButton = "#add-to-cart-button";
-  cartButton = "#a-button-input";
+  cartButton = ".a-button-text";
   deleteCartItemButton = "input[data-action='delete']";
   cartRemovedMessage = ".sc-list-item-removed-msg";
 
@@ -22,7 +20,7 @@ export default class AmazonPage {
   }
 
   clickSearchButton() {
-    cy.get(this.searchButton);
+    cy.get(this.searchButton).click();
   }
 
   selectItem(itemName: string) {
@@ -39,7 +37,7 @@ export default class AmazonPage {
   }
 
   clickCartButton() {
-    cy.contains(this.cartButton, "Cart").click();
+    cy.contains(this.cartButton, "Go to Cart").click({ force: true });
   }
 
   clickDeleteCartItemButton() {
