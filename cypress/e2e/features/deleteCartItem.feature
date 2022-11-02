@@ -9,4 +9,4 @@ Feature: Delete Cart Item
         And user clicks on Add to Cart button
         And user clicks on Cart button
         When user clicks on delete cart item button
-        Then user item removed in successfully
+        Then item removed successfully

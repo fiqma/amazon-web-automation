@@ -35,6 +35,6 @@ When("user clicks on delete cart item button", () => {
   amazonPage.clickDeleteCartItemButton();
 });
 
-Then("user item removed in successfully", () => {
+Then("item removed successfully", () => {
   amazonPage.assertCartRemovedMessage("was removed from Shopping Cart.");
 });
